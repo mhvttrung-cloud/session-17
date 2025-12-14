@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+        margin: 0;
+        padding: 0;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://images.pexels.com/photos/2725445/pexels-photo-2725445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+       }
+       #bridge {
+            color: rgb(232, 239, 246);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .elegant {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+            color: white;
+        }
+        .login-form {
+            height: 350px;
+            border-radius: 5px;
+            background-color: rgb(234, 235, 237, 0.6);
+            width: 320px;
+            padding: 5px;
+       }
+       .text-login {
+            background-color: rgb(38, 131, 203);
+            border-radius: 5px;
+            height: 30px;
+            line-height: 70x;
+       }
+       .or {
+            line-height: 40px;
+       }
+       .btn {
+            width: 147px;
+       }
+       .footer {
+            text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+    
+    <div class="elegant">ELEGANT LOGIN FORM</div>
+    <div id="bridge">
+        <div class="login-form">
+            <div class="text-login">LOG IN</div>
+            <form class="form" method="post">
+                    <div class="or">
+                    <label for="Email"></label>
+                    <input type="text" placeholder="Email" name="Email"><br/>
+
+                    <label for="password"></label>
+                    <input type="password" placeholder="Password" name="Password"><br/>
+
+                    <button class="btn" type="submit" >Log In</button>
+
+                    <p style="color: blue;">OR</p>
+
+                    <p>No account yet? <a href="#">Singup</a></p>
+                    <a href="#">Forgot your passwrd?</a>
+                    </div>
+                </form>
+
+        </div>
+    </div>
+    <footer class="footer"> &#169; 2017 Elegant Login Form. All Right Reserved Design by W3layouts</footer>
+</body>
+</html>

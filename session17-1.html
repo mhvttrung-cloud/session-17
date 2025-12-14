@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overlay{
+            background-color: rgb(19, 20, 20,0.3);
+            display: none;
+            position: fixed;
+            inset: 0;
+        }
+        .modal {
+            background-color: blanchedalmond;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top : 50%;
+            left : 50%;
+            padding: 20px;
+            border-radius: 4px;
+            min-width: 300px;
+        }
+        .body-modal{
+            position: relative;
+        }
+        .close {
+            position: absolute;
+            background-color: burlywood;
+            top: -15px;
+            right: -10px;
+        }
+        #background{
+            background-color: green;
+            padding: 20px;
+        }
+        #div-parent {
+            display: flex;
+            justify-content:space-evenly;
+            text-align: center;
+        }
+        .div {
+            background-color: rgb(211, 119, 7);
+            display: flex;
+            justify-content:space-evenly;
+            text-align: center;
+            line-height: 100px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Luyện bài 17</h1>
+    <div id="atext"></div>
+        <p class="content">This is a text</p>
+        <button class="btn">Hide text</button>
+        <button class="btn2">Show text</button>
+    
+    <div id="black-mode" style="background-color: black; color: aliceblue;line-height: 50px;">
+        <div style="font-size: 30px;">Toggel Dark/Light Mode</div>
+        <p>Click the button to toggel between dark and light mode for this page</p>
+        <button class="btn3">Toggel Dark Mode</button>
+    </div>
+
+
+        <h2>Modal Example</h2>
+    <button id="btn-modal">Open Modal</button>
+    <!-- ---Overlay---👇 -->
+    <div class="overlay">
+        <!-- class modal phải ở trạng thái ẩn, vì vậy nên dùng position :none -->
+        <div class ="modal"> 
+            <div class="body-modal">
+                Some text in the modal
+                <span class="close">x</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="background">
+        <div style="font-size: 30px;">Change background-color</div>
+        <div style="font-size: 20px; padding:20px;">Mouse over the square</div>
+        <div id="div-parent">
+            <div class="div-1 div">a</div>
+            <div class="div-2 div">b</div>
+            <div class="div-3 div">c</div>
+        </div>
+    </div>
+
+    <div id="bridge">
+        <div class="login-form">
+            <img src="https://images.pexels.com/photos/2725445/pexels-photo-2725445.jpeg" alt="bridge">
+            <h3>ELEGANT LOGIN FORM</h3>
+            <div>
+                <div class="text-login">LOG IN</div>
+                <form class="form">
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email">
+                    <label for="Password">Password</label>
+                    <input type="text" name="Password">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./session17-1.js"></script>
+</body>
+</html>
