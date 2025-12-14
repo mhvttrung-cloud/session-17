@@ -1,0 +1,17 @@
+.tablet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 30px;
+}
+
+.display {
+    display: grid;
+    grid-column: 1 / -1;
+}
+.caulculator {
+    display: grid;
+    grid-column: 4;
+    grid-row: 3 / 6;
+}
